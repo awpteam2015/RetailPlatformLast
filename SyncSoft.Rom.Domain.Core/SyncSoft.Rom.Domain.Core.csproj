@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C43C414C-5DD5-4941-BCE9-E9B367FE0DED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SyncSoft.Rom.Domain.Core</RootNamespace>
+    <AssemblyName>SyncSoft.Rom.Domain.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoInit.cs" />
+    <Compile Include="CustomerManager\Model\Card.cs" />
+    <Compile Include="CustomerManager\Model\Customer.cs" />
+    <Compile Include="CustomerManager\Repositories\ICardRepository.cs" />
+    <Compile Include="CustomerManager\Services\ICustomerDomainService.cs" />
+    <Compile Include="CustomerManager\Services\CustomerDomainService.cs" />
+    <Compile Include="Events\CardPointUpdateEvent.cs" />
+    <Compile Include="Events\Handlers\CardPointUpdateEventHandler.cs" />
+    <Compile Include="OrderManager\Model\OrderMain.cs" />
+    <Compile Include="OrderManager\Model\OrderMainDetail.cs" />
+    <Compile Include="OrderManager\Repositories\IOrderMainDetailRepository.cs" />
+    <Compile Include="OrderManager\Repositories\IOrderMainRepository.cs" />
+    <Compile Include="OrderManager\Services\IOrderDomainService.cs" />
+    <Compile Include="OrderManager\Services\OrderDomainService.cs" />
+    <Compile Include="PermissionManager\Model\Role.cs" />
+    <Compile Include="PermissionManager\Model\Department.cs" />
+    <Compile Include="PermissionManager\Model\FunctionRight.cs" />
+    <Compile Include="PermissionManager\Model\Module.cs" />
+    <Compile Include="PermissionManager\Model\ModuleFunction.cs" />
+    <Compile Include="PermissionManager\Model\RolePopedom.cs" />
+    <Compile Include="PermissionManager\Model\TestDo.cs" />
+    <Compile Include="PermissionManager\Model\User.cs" />
+    <Compile Include="PermissionManager\Model\UserDepartmentView.cs" />
+    <Compile Include="PermissionManager\Repositories\IDepartmentRepository.cs" />
+    <Compile Include="PermissionManager\Repositories\IModuleFunctionRepository.cs" />
+    <Compile Include="PermissionManager\Repositories\IModuleRepository.cs" />
+    <Compile Include="PermissionManager\Repositories\IUserRepository.cs" />
+    <Compile Include="PermissionManager\Services\DepartmentService.cs" />
+    <Compile Include="PermissionManager\Services\IPermissionDomainService.cs" />
+    <Compile Include="PermissionManager\Services\PermissionDomainService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestManager\Model\TableMain.cs" />
+    <Compile Include="TestManager\Repositories\ITableMainRepository.cs" />
+    <Compile Include="TestManager\Services\ITableService.cs" />
+    <Compile Include="TestManager\Services\TableService.cs" />
+    <Compile Include="Trans\TransactionHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TicketManager\Model\" />
+    <Folder Include="TicketManager\Repositories\" />
+    <Folder Include="TicketManager\Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonFrameWork\CommonFrameWork.csproj">
+      <Project>{7292049a-b945-4864-8239-f49956a12a28}</Project>
+      <Name>CommonFrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SyncSoft.Rom.ProjectConfig\SyncSoft.Rom.ProjectConfig.csproj">
+      <Project>{4b636da8-11d9-4a56-aee8-761592c10e17}</Project>
+      <Name>SyncSoft.Rom.ProjectConfig</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

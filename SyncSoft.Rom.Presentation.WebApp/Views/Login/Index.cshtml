@@ -1,0 +1,76 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>零售平台 Retail Operation Management</title>
+    @Html.Partial("_Head")
+    <link href="~/Resources/Css/Login.css" rel="stylesheet" />
+    <script src="~/Scripts/Login/Index.js"></script>
+</head>
+<body id="login">
+
+    <div id="wrappertop">
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            <div id="header">
+                <h1>
+                    <a href="">
+                    </a>
+                </h1>
+            </div>
+            <div id="darkbanner" class="banner320">
+                <h2>
+                    ROM
+                </h2>
+            </div>
+            <div id="darkbannerwrap">
+            </div>
+            <fieldset class="form">
+                <p>
+                    <label class="loginlabel" >
+                        用户名:
+                    </label>
+                    <input class="logininput required" name="LoginId" id="LoginId" type="text" />
+                </p>
+                <p>
+                    <label class="loginlabel">
+                        密码:
+                    </label>
+                    <span>
+                        <input class="logininput required" name="Password" id="Password" type="password" />
+                    </span>
+                </p>
+                <p>
+                    <label class="loginlabel" >
+                        部门:
+                    </label>
+                    <div style="position:relative;">
+                        <span style="margin-left:100px;width:18px;overflow:hidden;">
+                            <select id="SelectDepartmentCode" name="SelectDepartmentCode" style="width:298px;margin-left:-100px" >
+                             
+                            </select>
+                        </span><input id="SelectDepartmentName"  name="SelectDepartmentName" style="width:280px;position:absolute;left:80px;height: 23px;" />
+                    </div>
+
+                </p>
+                <button id="btn_Login" type="button" class="positive" >
+                    <img src="/Resources/Pic/key.png" alt="Announcement" />Login
+                </button>
+            </fieldset>
+        </div>
+    </div>
+    <div id="wrapperbottom_branding">
+        <div id="wrapperbottom_branding_text">
+        </div>
+    </div>
+
+</body>
+
+</html>
+

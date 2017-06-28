@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{937F1952-1100-4A3A-B321-B626DB28225D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DomainTest</RootNamespace>
+    <AssemblyName>DomainTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.24160719\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonFrameWork.Extensions.Autofac\CommonFrameWork.Extensions.Autofac.csproj">
+      <Project>{4f063063-ee36-412b-8a29-3986e3617d49}</Project>
+      <Name>CommonFrameWork.Extensions.Autofac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonFrameWork.Extensions.AutoMapper\CommonFrameWork.Extensions.AutoMapper.csproj">
+      <Project>{7a926056-6354-469d-99ce-c08d2fd61b97}</Project>
+      <Name>CommonFrameWork.Extensions.AutoMapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonFrameWork.Extensions.Log4Net\CommonFrameWork.Extensions.Log4Net.csproj">
+      <Project>{9ec69240-8b44-4850-bf87-dfea828212c9}</Project>
+      <Name>CommonFrameWork.Extensions.Log4Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonFrameWork.Extensions.NewTonSoft\CommonFrameWork.Extensions.NewTonSoft.csproj">
+      <Project>{0090cf80-b76e-4a94-872c-922d452c6550}</Project>
+      <Name>CommonFrameWork.Extensions.NewTonSoft</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonFrameWork.Extensions.NHibernate\CommonFrameWork.Extensions.NHibernate.csproj">
+      <Project>{626d0968-60f1-41ec-8879-53782384a74a}</Project>
+      <Name>CommonFrameWork.Extensions.NHibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonFrameWork.ToolKit\CommonFrameWork.ToolKit.csproj">
+      <Project>{12fb84f8-49e6-4572-a1ba-be61c89a97cf}</Project>
+      <Name>CommonFrameWork.ToolKit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonFrameWork.Web\CommonFrameWork.Web.csproj">
+      <Project>{0a48a19d-e724-4bb7-8e58-043550a61de0}</Project>
+      <Name>CommonFrameWork.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonFrameWork\CommonFrameWork.csproj">
+      <Project>{7292049a-b945-4864-8239-f49956a12a28}</Project>
+      <Name>CommonFrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SyncSoft.Rom.Domain.Core.Nhibernate\SyncSoft.Rom.Domain.Core.Nhibernate.csproj">
+      <Project>{28a8315a-fc75-4aed-80b4-c190711d732d}</Project>
+      <Name>SyncSoft.Rom.Domain.Core.Nhibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SyncSoft.Rom.Domain.Core\SyncSoft.Rom.Domain.Core.csproj">
+      <Project>{c43c414c-5dd5-4941-bce9-e9b367fe0ded}</Project>
+      <Name>SyncSoft.Rom.Domain.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config\Develop\" />
+    <Folder Include="Config\Integrated\" />
+    <Folder Include="Config\Offical\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\hibernate.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

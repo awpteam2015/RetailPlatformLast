@@ -1,0 +1,111 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jqueryPlugins/jquery_json/Json.js"></script>
+</head>
+<body>
+    <div>
+        <input type="button" value="错误异步" onclick="ajaxErrorTest()" />
+        <input type="button" value="错误跳转页面" onclick="errorTest()"/>
+
+
+        <input type="button" value="增" onclick="add()"/>
+        <input type="button" value="删" onclick="del()"/>
+        <input type="button" value="改" onclick="update()"/>
+        <input type="button" value="查" onclick="get()"/>
+        <input type="button" value="触发其他领域" onclick="TriggerOtherDomain()" />
+    </div>
+    <script type="text/javascript">
+        function ajaxErrorTest() {
+            $.ajax({
+                async: false,
+                url: "/Test/AjaxErrorTest",
+                type: "POST",
+                cache: false,
+                success: function (msg) {
+                    alert(msg.Success);
+                }
+            });
+        }
+
+
+        function errorTest() {
+            window.location.href = "/Test/ErrorTest";
+        }
+
+        function add() {
+            $.ajax({
+                async: false,
+                url: "/Test/Add",
+                type: "POST",
+                cache: false,
+                success: function (msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        function del() {
+            $.ajax({
+                async: false,
+                url: "/Test/Delete",
+                type: "POST",
+                cache: false,
+                success: function (msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        function update() {
+            $.ajax({
+                async: false,
+                url: "/Test/Update",
+                type: "POST",
+                cache: false,
+                success: function (msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+        function get() {
+            $.ajax({
+                async: false,
+                url: "/Test/Get",
+                type: "POST",
+                cache: false,
+                success: function (msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+
+        function TriggerOtherDomain() {
+            $.ajax({
+                async: false,
+                url: "/Test/TriggerOtherDomain",
+                type: "POST",
+                cache: false,
+                success: function (msg) {
+                    alert(msg);
+                }
+            });
+        }
+
+
+    </script>
+
+</body>
+
+</html>

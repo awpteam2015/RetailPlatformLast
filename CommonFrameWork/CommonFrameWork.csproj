@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7292049A-B945-4864-8239-F49956A12A28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonFrameWork</RootNamespace>
+    <AssemblyName>CommonFrameWork</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\AppExtensions.cs" />
+    <Compile Include="Application\AppProcessResult.cs" />
+    <Compile Include="Application\AppRuntime.cs" />
+    <Compile Include="Application\AppSearchRequest.cs" />
+    <Compile Include="Application\DefaultApp.cs" />
+    <Compile Include="Application\DisposableObject.cs" />
+    <Compile Include="Application\HostBase.cs" />
+    <Compile Include="Application\IApp.cs" />
+    <Compile Include="Application\IAutoInitializer.cs" />
+    <Compile Include="Bus\Distributed\DistributedMessageBus.cs" />
+    <Compile Include="Bus\Distributed\IDistributedHandler.cs" />
+    <Compile Include="Bus\Distributed\Model\CQRSIdentity.cs" />
+    <Compile Include="Bus\Distributed\Model\DistributedCommand.cs" />
+    <Compile Include="Bus\Distributed\Model\DistributedEvent.cs" />
+    <Compile Include="Bus\Distributed\Model\DistributedMessage.cs" />
+    <Compile Include="Bus\Distributed\Model\IDistributedMessage.cs" />
+    <Compile Include="Bus\ICommand.cs" />
+    <Compile Include="Bus\IEvent.cs" />
+    <Compile Include="Bus\IMessage.cs" />
+    <Compile Include="Bus\IMessageDispatcher.cs" />
+    <Compile Include="Bus\Local\ILocalHandler.cs" />
+    <Compile Include="Bus\Local\LocalHandler.cs" />
+    <Compile Include="Bus\Local\LocalMessageBus.cs" />
+    <Compile Include="Bus\Local\Model\ILocalMessage.cs" />
+    <Compile Include="Bus\Local\Model\LocalCommand.cs" />
+    <Compile Include="Bus\Local\Model\LocalEvent.cs" />
+    <Compile Include="Bus\Local\Model\LocalMessage.cs" />
+    <Compile Include="Bus\MessageDispatcher.cs" />
+    <Compile Include="Bus\MessageDispatchModeEnum.cs" />
+    <Compile Include="Caching\CacheManager.cs" />
+    <Compile Include="Caching\ICacheProvider.cs" />
+    <Compile Include="CommUtils\AsyncUtils.cs" />
+    <Compile Include="CommUtils\ConvertHelper.cs" />
+    <Compile Include="CommUtils\Extensions\CommonExtensions.cs" />
+    <Compile Include="CommUtils\PredicateBuilder.cs" />
+    <Compile Include="CommUtils\RequestHelper.cs" />
+    <Compile Include="CommUtils\Url.cs" />
+    <Compile Include="CommUtils\Utils.cs" />
+    <Compile Include="Config\CommonFrameWorkConfig.cs" />
+    <Compile Include="Config\DefaultConfig.cs" />
+    <Compile Include="Config\DistributedConfig.cs" />
+    <Compile Include="Config\IConfigSource.cs" />
+    <Compile Include="DataMap\DataMapParamter.cs" />
+    <Compile Include="DataMap\DataMapper.cs" />
+    <Compile Include="DataMap\IDataMapperProvider.cs" />
+    <Compile Include="Dependency\ComponentRegistration.cs" />
+    <Compile Include="Dependency\IObjectContainer.cs" />
+    <Compile Include="Dependency\ObjectContainer.cs" />
+    <Compile Include="Dependency\ObjectContainerParameter.cs" />
+    <Compile Include="Domain\Entities\IAggregateRoot.cs" />
+    <Compile Include="Domain\Entities\IEntity.cs" />
+    <Compile Include="Domain\Entities\OrderBy.cs" />
+    <Compile Include="Domain\Entities\PagedResult.cs" />
+    <Compile Include="Domain\Repositories\IRepository.cs" />
+    <Compile Include="Domain\Repositories\IRepositoryContext.cs" />
+    <Compile Include="Domain\Repositories\Repository.cs" />
+    <Compile Include="Domain\Repositories\RepositoryContext.cs" />
+    <Compile Include="Domain\Services\DomainService.cs" />
+    <Compile Include="Domain\Services\Dto\Error.cs" />
+    <Compile Include="Domain\Services\Dto\IResult.cs" />
+    <Compile Include="Domain\Services\Dto\Result.cs" />
+    <Compile Include="Domain\Services\IDomainService.cs" />
+    <Compile Include="Domain\Uow\IUnitOfWork.cs" />
+    <Compile Include="Domain\Uow\UnitOfWorkOptions.cs" />
+    <Compile Include="Exception\CommonFrameException.cs" />
+    <Compile Include="Exception\CommonFrameExtensionsException.cs" />
+    <Compile Include="Exception\ConfigException.cs" />
+    <Compile Include="Exception\AppException.cs" />
+    <Compile Include="Exception\DomainException.cs" />
+    <Compile Include="Exception\RepositoryException.cs" />
+    <Compile Include="Exception\UowException.cs" />
+    <Compile Include="Logging\DefaultLogger.cs" />
+    <Compile Include="Logging\DefaultLoggerFactory.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\ILoggerFactory.cs" />
+    <Compile Include="Logging\LoggerExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Md5\CommonFrameWorkMD5.cs" />
+    <Compile Include="Security\Md5\CommonFrameWorkMD5Core.cs" />
+    <Compile Include="Security\Md5\CommonFrameWorkMD5Notify.cs" />
+    <Compile Include="Security\Md5\CommonFrameWorkMD5Submit.cs" />
+    <Compile Include="Security\Rsa\CommonFrameWorkRsa.cs" />
+    <Compile Include="Security\Rsa\CommonFrameWorkRSACore.cs" />
+    <Compile Include="Security\Rsa\CommonFrameWorkRsaNotify.cs" />
+    <Compile Include="Security\Rsa\CommonFrameWorkRSASubmit.cs" />
+    <Compile Include="Security\Rsa\RSACryptoServiceProviderExtension.cs" />
+    <Compile Include="Serialization\DefaultObjectSerializer.cs" />
+    <Compile Include="Serialization\IObjectSerializer.cs" />
+    <Compile Include="Specifications\AndNotSpecification.cs" />
+    <Compile Include="Specifications\AndSpecification.cs" />
+    <Compile Include="Specifications\AnySpecification.cs" />
+    <Compile Include="Specifications\CompositeSpecification.cs" />
+    <Compile Include="Specifications\ExpressionFuncExtender.cs" />
+    <Compile Include="Specifications\ExpressionSpecification.cs" />
+    <Compile Include="Specifications\ICompositeSpecification.cs" />
+    <Compile Include="Specifications\ISpecification.cs" />
+    <Compile Include="Specifications\NotSpecification.cs" />
+    <Compile Include="Specifications\OrSpecification.cs" />
+    <Compile Include="Specifications\ParameterRebinder.cs" />
+    <Compile Include="Specifications\Specification.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Authorization\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,213 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFrameWork", "CommonFrameWork\CommonFrameWork.csproj", "{7292049A-B945-4864-8239-F49956A12A28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.CommonFrameWork", "4.CommonFrameWork", "{F1EDF576-EDCE-4F5E-BEFB-EE2479A98E4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Test", "5.Test", "{0B6F6A23-B384-456B-8106-F649614A1B17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{70906C82-6480-4D12-9217-A335B0959E5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{DD84EBCA-1D7F-464B-8D81-8CDF88A4714E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{89E643D6-D5B1-4445-B122-3E429542A0F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.文档", "6.文档", "{77C33998-D4FB-4E56-8761-927B888EF125}"
+	ProjectSection(SolutionItems) = preProject
+		文档\OMS库存管理.rp = 文档\OMS库存管理.rp
+		文档\SAPExtend.pdb = 文档\SAPExtend.pdb
+		文档\SAPExtend.pdm = 文档\SAPExtend.pdm
+		文档\sap外移文档.docx = 文档\sap外移文档.docx
+		文档\门店SAP外移.rp = 文档\门店SAP外移.rp
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFrameWork.Extensions.Autofac", "CommonFrameWork.Extensions.Autofac\CommonFrameWork.Extensions.Autofac.csproj", "{4F063063-EE36-412B-8A29-3986E3617D49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFrameWork.Extensions.Log4Net", "CommonFrameWork.Extensions.Log4Net\CommonFrameWork.Extensions.Log4Net.csproj", "{9EC69240-8B44-4850-BF87-DFEA828212C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFrameWork.Extensions.NewTonSoft", "CommonFrameWork.Extensions.NewTonSoft\CommonFrameWork.Extensions.NewTonSoft.csproj", "{0090CF80-B76E-4A94-872C-922D452C6550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFrameWork.Extensions.NHibernate", "CommonFrameWork.Extensions.NHibernate\CommonFrameWork.Extensions.NHibernate.csproj", "{626D0968-60F1-41EC-8879-53782384A74A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{E0220FB8-2A52-49C7-B1F6-2A4026B4EA91}"
+	ProjectSection(SolutionItems) = preProject
+		libs\HibernatingRhinos.Profiler.Appender.v4.0.dll = libs\HibernatingRhinos.Profiler.Appender.v4.0.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncSoft.Rom.Domain.Core", "SyncSoft.Rom.Domain.Core\SyncSoft.Rom.Domain.Core.csproj", "{C43C414C-5DD5-4941-BCE9-E9B367FE0DED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncSoft.Rom.Domain.Core.Nhibernate", "SyncSoft.Rom.Domain.Core.Nhibernate\SyncSoft.Rom.Domain.Core.Nhibernate.csproj", "{28A8315A-FC75-4AED-80B4-C190711D732D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncSoft.Rom.Application", "SyncSoft.Rom.Application\SyncSoft.Rom.Application.csproj", "{23D3E0AF-F779-4EA7-A287-B22E5B3C452F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncSoft.Rom.Presentation.WebApp", "SyncSoft.Rom.Presentation.WebApp\SyncSoft.Rom.Presentation.WebApp.csproj", "{092E9AF1-C955-4C85-8DA3-2506EA92E00D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFrameWork.Web", "CommonFrameWork.Web\CommonFrameWork.Web.csproj", "{0A48A19D-E724-4BB7-8E58-043550A61DE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncSoft.Rom.ProjectConfig", "SyncSoft.Rom.ProjectConfig\SyncSoft.Rom.ProjectConfig.csproj", "{4B636DA8-11D9-4A56-AEE8-761592C10E17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFrameWork.ToolKit", "CommonFrameWork.ToolKit\CommonFrameWork.ToolKit.csproj", "{12FB84F8-49E6-4572-A1BA-BE61C89A97CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFrameWork.Extensions.AutoMapper", "CommonFrameWork.Extensions.AutoMapper\CommonFrameWork.Extensions.AutoMapper.csproj", "{7A926056-6354-469D-99CE-C08D2FD61B97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoriesTest", "RepositoriesTest\RepositoriesTest.csproj", "{D9003F4A-BD21-4729-9A93-19CA1504A5B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainTest", "DomainTest\DomainTest.csproj", "{937F1952-1100-4A3A-B321-B626DB28225D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7292049A-B945-4864-8239-F49956A12A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7292049A-B945-4864-8239-F49956A12A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7292049A-B945-4864-8239-F49956A12A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7292049A-B945-4864-8239-F49956A12A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F063063-EE36-412B-8A29-3986E3617D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F063063-EE36-412B-8A29-3986E3617D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F063063-EE36-412B-8A29-3986E3617D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F063063-EE36-412B-8A29-3986E3617D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EC69240-8B44-4850-BF87-DFEA828212C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC69240-8B44-4850-BF87-DFEA828212C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC69240-8B44-4850-BF87-DFEA828212C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC69240-8B44-4850-BF87-DFEA828212C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0090CF80-B76E-4A94-872C-922D452C6550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0090CF80-B76E-4A94-872C-922D452C6550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0090CF80-B76E-4A94-872C-922D452C6550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0090CF80-B76E-4A94-872C-922D452C6550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626D0968-60F1-41EC-8879-53782384A74A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626D0968-60F1-41EC-8879-53782384A74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626D0968-60F1-41EC-8879-53782384A74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626D0968-60F1-41EC-8879-53782384A74A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C43C414C-5DD5-4941-BCE9-E9B367FE0DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C43C414C-5DD5-4941-BCE9-E9B367FE0DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C43C414C-5DD5-4941-BCE9-E9B367FE0DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C43C414C-5DD5-4941-BCE9-E9B367FE0DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A8315A-FC75-4AED-80B4-C190711D732D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A8315A-FC75-4AED-80B4-C190711D732D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A8315A-FC75-4AED-80B4-C190711D732D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A8315A-FC75-4AED-80B4-C190711D732D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D3E0AF-F779-4EA7-A287-B22E5B3C452F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D3E0AF-F779-4EA7-A287-B22E5B3C452F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D3E0AF-F779-4EA7-A287-B22E5B3C452F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D3E0AF-F779-4EA7-A287-B22E5B3C452F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092E9AF1-C955-4C85-8DA3-2506EA92E00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092E9AF1-C955-4C85-8DA3-2506EA92E00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092E9AF1-C955-4C85-8DA3-2506EA92E00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092E9AF1-C955-4C85-8DA3-2506EA92E00D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A48A19D-E724-4BB7-8E58-043550A61DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A48A19D-E724-4BB7-8E58-043550A61DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A48A19D-E724-4BB7-8E58-043550A61DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A48A19D-E724-4BB7-8E58-043550A61DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B636DA8-11D9-4A56-AEE8-761592C10E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B636DA8-11D9-4A56-AEE8-761592C10E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B636DA8-11D9-4A56-AEE8-761592C10E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B636DA8-11D9-4A56-AEE8-761592C10E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12FB84F8-49E6-4572-A1BA-BE61C89A97CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FB84F8-49E6-4572-A1BA-BE61C89A97CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FB84F8-49E6-4572-A1BA-BE61C89A97CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FB84F8-49E6-4572-A1BA-BE61C89A97CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A926056-6354-469D-99CE-C08D2FD61B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A926056-6354-469D-99CE-C08D2FD61B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A926056-6354-469D-99CE-C08D2FD61B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A926056-6354-469D-99CE-C08D2FD61B97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9003F4A-BD21-4729-9A93-19CA1504A5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9003F4A-BD21-4729-9A93-19CA1504A5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9003F4A-BD21-4729-9A93-19CA1504A5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9003F4A-BD21-4729-9A93-19CA1504A5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937F1952-1100-4A3A-B321-B626DB28225D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937F1952-1100-4A3A-B321-B626DB28225D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937F1952-1100-4A3A-B321-B626DB28225D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937F1952-1100-4A3A-B321-B626DB28225D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7292049A-B945-4864-8239-F49956A12A28} = {F1EDF576-EDCE-4F5E-BEFB-EE2479A98E4E}
+		{4F063063-EE36-412B-8A29-3986E3617D49} = {F1EDF576-EDCE-4F5E-BEFB-EE2479A98E4E}
+		{9EC69240-8B44-4850-BF87-DFEA828212C9} = {F1EDF576-EDCE-4F5E-BEFB-EE2479A98E4E}
+		{0090CF80-B76E-4A94-872C-922D452C6550} = {F1EDF576-EDCE-4F5E-BEFB-EE2479A98E4E}
+		{626D0968-60F1-41EC-8879-53782384A74A} = {F1EDF576-EDCE-4F5E-BEFB-EE2479A98E4E}
+		{C43C414C-5DD5-4941-BCE9-E9B367FE0DED} = {89E643D6-D5B1-4445-B122-3E429542A0F7}
+		{28A8315A-FC75-4AED-80B4-C190711D732D} = {89E643D6-D5B1-4445-B122-3E429542A0F7}
+		{23D3E0AF-F779-4EA7-A287-B22E5B3C452F} = {DD84EBCA-1D7F-464B-8D81-8CDF88A4714E}
+		{092E9AF1-C955-4C85-8DA3-2506EA92E00D} = {70906C82-6480-4D12-9217-A335B0959E5F}
+		{0A48A19D-E724-4BB7-8E58-043550A61DE0} = {F1EDF576-EDCE-4F5E-BEFB-EE2479A98E4E}
+		{4B636DA8-11D9-4A56-AEE8-761592C10E17} = {89E643D6-D5B1-4445-B122-3E429542A0F7}
+		{12FB84F8-49E6-4572-A1BA-BE61C89A97CF} = {F1EDF576-EDCE-4F5E-BEFB-EE2479A98E4E}
+		{7A926056-6354-469D-99CE-C08D2FD61B97} = {F1EDF576-EDCE-4F5E-BEFB-EE2479A98E4E}
+		{D9003F4A-BD21-4729-9A93-19CA1504A5B1} = {0B6F6A23-B384-456B-8106-F649614A1B17}
+		{937F1952-1100-4A3A-B321-B626DB28225D} = {0B6F6A23-B384-456B-8106-F649614A1B17}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.20.19:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CommonFrameWork\\CommonFrameWork.csproj
+		SccProjectTopLevelParentUniqueName1 = SyncSoft.NewRom.sln
+		SccProjectName1 = CommonFrameWork
+		SccLocalPath1 = CommonFrameWork
+		SccProjectUniqueName2 = CommonFrameWork.Extensions.Autofac\\CommonFrameWork.Extensions.Autofac.csproj
+		SccProjectTopLevelParentUniqueName2 = SyncSoft.NewRom.sln
+		SccProjectName2 = CommonFrameWork.Extensions.Autofac
+		SccLocalPath2 = CommonFrameWork.Extensions.Autofac
+		SccProjectUniqueName3 = CommonFrameWork.Extensions.Log4Net\\CommonFrameWork.Extensions.Log4Net.csproj
+		SccProjectTopLevelParentUniqueName3 = SyncSoft.NewRom.sln
+		SccProjectName3 = CommonFrameWork.Extensions.Log4Net
+		SccLocalPath3 = CommonFrameWork.Extensions.Log4Net
+		SccProjectUniqueName4 = CommonFrameWork.Extensions.NewTonSoft\\CommonFrameWork.Extensions.NewTonSoft.csproj
+		SccProjectTopLevelParentUniqueName4 = SyncSoft.NewRom.sln
+		SccProjectName4 = CommonFrameWork.Extensions.NewTonSoft
+		SccLocalPath4 = CommonFrameWork.Extensions.NewTonSoft
+		SccProjectUniqueName5 = CommonFrameWork.Extensions.NHibernate\\CommonFrameWork.Extensions.NHibernate.csproj
+		SccProjectTopLevelParentUniqueName5 = SyncSoft.NewRom.sln
+		SccProjectName5 = CommonFrameWork.Extensions.NHibernate
+		SccLocalPath5 = CommonFrameWork.Extensions.NHibernate
+		SccProjectUniqueName6 = SyncSoft.Rom.Domain.Core\\SyncSoft.Rom.Domain.Core.csproj
+		SccProjectTopLevelParentUniqueName6 = SyncSoft.NewRom.sln
+		SccProjectName6 = SyncSoft.Rom.Domain.Core
+		SccLocalPath6 = SyncSoft.Rom.Domain.Core
+		SccProjectUniqueName7 = SyncSoft.Rom.Domain.Core.Nhibernate\\SyncSoft.Rom.Domain.Core.Nhibernate.csproj
+		SccProjectTopLevelParentUniqueName7 = SyncSoft.NewRom.sln
+		SccProjectName7 = SyncSoft.Rom.Domain.Core.Nhibernate
+		SccLocalPath7 = SyncSoft.Rom.Domain.Core.Nhibernate
+		SccProjectUniqueName8 = SyncSoft.Rom.Application\\SyncSoft.Rom.Application.csproj
+		SccProjectTopLevelParentUniqueName8 = SyncSoft.NewRom.sln
+		SccProjectName8 = SyncSoft.Rom.Application
+		SccLocalPath8 = SyncSoft.Rom.Application
+		SccProjectUniqueName9 = SyncSoft.Rom.Presentation.WebApp\\SyncSoft.Rom.Presentation.WebApp.csproj
+		SccProjectTopLevelParentUniqueName9 = SyncSoft.NewRom.sln
+		SccProjectName9 = SyncSoft.Rom.Presentation.WebApp
+		SccLocalPath9 = SyncSoft.Rom.Presentation.WebApp
+		SccProjectUniqueName10 = CommonFrameWork.Web\\CommonFrameWork.Web.csproj
+		SccProjectTopLevelParentUniqueName10 = SyncSoft.NewRom.sln
+		SccProjectName10 = CommonFrameWork.Web
+		SccLocalPath10 = CommonFrameWork.Web
+		SccProjectUniqueName11 = SyncSoft.Rom.ProjectConfig\\SyncSoft.Rom.ProjectConfig.csproj
+		SccProjectTopLevelParentUniqueName11 = SyncSoft.NewRom.sln
+		SccProjectName11 = SyncSoft.Rom.ProjectConfig
+		SccLocalPath11 = SyncSoft.Rom.ProjectConfig
+		SccProjectUniqueName12 = CommonFrameWork.ToolKit\\CommonFrameWork.ToolKit.csproj
+		SccProjectTopLevelParentUniqueName12 = SyncSoft.NewRom.sln
+		SccProjectName12 = CommonFrameWork.ToolKit
+		SccLocalPath12 = CommonFrameWork.ToolKit
+		SccProjectUniqueName13 = CommonFrameWork.Extensions.AutoMapper\\CommonFrameWork.Extensions.AutoMapper.csproj
+		SccProjectTopLevelParentUniqueName13 = SyncSoft.NewRom.sln
+		SccProjectName13 = CommonFrameWork.Extensions.AutoMapper
+		SccLocalPath13 = CommonFrameWork.Extensions.AutoMapper
+		SccProjectUniqueName14 = RepositoriesTest\\RepositoriesTest.csproj
+		SccProjectTopLevelParentUniqueName14 = SyncSoft.NewRom.sln
+		SccProjectName14 = RepositoriesTest
+		SccLocalPath14 = RepositoriesTest
+		SccProjectUniqueName15 = DomainTest\\DomainTest.csproj
+		SccProjectTopLevelParentUniqueName15 = SyncSoft.NewRom.sln
+		SccProjectName15 = DomainTest
+		SccLocalPath15 = DomainTest
+	EndGlobalSection
+EndGlobal
